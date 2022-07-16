@@ -29,5 +29,5 @@
   "include": [
     "**/*.ts",
     "**/*.tsx"
-  ]
+, "api copy/socketEvents.js", "api copy/ServerRound.js", "api copy/index.js", "api copy/api.js", "api copy/ServerTurn.js", "api copy/utils/getPublicLobbies.js", "api copy/utils/getWords.js", "api copy/utils/sleep.js"  ]
 }

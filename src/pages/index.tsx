@@ -13,7 +13,7 @@ const Home: React.FC = (): JSX.Element => {
 
     const joinLobby: any = async () => {
         if (!name) {
-            const res = await axios('/api/word')
+            const res = await axios('https://field-freckle-consonant.glitch.me//api/word')
             setName(res.data)
         }
 
@@ -22,7 +22,7 @@ const Home: React.FC = (): JSX.Element => {
         }
 
         try {
-            const res = await axios('/api/find')
+            const res = await axios('https://field-freckle-consonant.glitch.me//api/find')
             if (res.status !== 200) return
             const lobby = res.data
             return router.push(`/play/${lobby}`)

@@ -14,7 +14,7 @@ const Lobbies: React.FC = (): JSX.Element => {
 
     const getLobbies = async (max: number = 20) => {
         try {
-            const res = await axios(`/api/lobbies?m=${max}`)
+            const res = await axios(`https://field-freckle-consonant.glitch.me/api/lobbies?m=${max}`)
             if (res.status !== 200) return
             setLobbies(res.data)
         } catch (e) {}
