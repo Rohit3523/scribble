@@ -16,7 +16,7 @@ const Create: React.FC = (): JSX.Element => {
 
     useEffect(() => {
         if (!url) return
-        setSocket(io(`/${url}`))
+        setSocket(io(`https://field-freckle-consonant.glitch.me//${url}`))
         setGameLink(`${getDomain()}/play/${url}`)
     }, [url])
 
