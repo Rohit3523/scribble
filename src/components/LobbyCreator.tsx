@@ -32,7 +32,7 @@ const LobbyCreator: React.FC<Props> = (props) => {
     const handleCreate = async (e: FormEvent) => {
         e.preventDefault()
 
-        const res = await axios.post('https://field-freckle-consonant.glitch.me//api/create', {
+        const res = await axios.post('https://field-freckle-consonant.glitch.me/api/create', {
             time,
             rounds,
             players: parseInt(players),
