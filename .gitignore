@@ -6,6 +6,8 @@
 .pnp.js
 
 # testing
+/api
+/api_copy
 /coverage
 
 # next.js

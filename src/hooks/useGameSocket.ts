@@ -41,7 +41,7 @@ export const useGameSocket = () => {
         if (!router.isReady) return
         const { id } = router.query
         if (!name) router.push(`/?lobby=${id}`)
-        if (!socket) return setSocket(io(`/${id}`))
+        if (!socket) return setSocket(io(`https://field-freckle-consonant.glitch.me/${id}`))
 
         socket.once('error', () => router.push('/'))
 
